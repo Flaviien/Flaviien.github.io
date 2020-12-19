@@ -1,0 +1,29 @@
+@import './libs/reset.scss';
+
+@import './libs/var.scss';
+
+body{
+    background-color: #212121;
+}
+
+.container-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+}
+
+@import './components/btn-menu.scss';
+@import './components/blobs.scss';
+
+
+.icon {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

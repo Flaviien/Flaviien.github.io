@@ -1,0 +1,108 @@
+@import '../libs/mixins.scss';
+
+.blob {
+    @include blobs;
+}
+
+.blob-1{
+    transition: all 0.10s 0.1s ease-out;
+    background-color: #a2e6d7;
+
+}
+.blob-2{
+    transition: all 0.10s 0.2s ease-out;
+    background-color: #b3cca4;
+    
+}
+.blob-3{
+    transition: all 0.10s 0.3s ease-out;
+    background-color: #cb8fc3;
+    
+}
+.blob-4{
+    transition: all 0.10s 0.4s ease-out;
+    background-color: #b3b3b3;
+    
+}
+.blob-5{
+    transition: all 0.10s 0.5s ease-out;
+    background-color: #8bb5e7;
+    
+}
+.blob-6{
+    transition: all 0.10s 0.6s ease-out;
+    background-color: #e6db8b;
+    
+}
+.blob-7{
+    transition: all 0.10s 0.7s ease-out;
+    background-color: #e68a8f;
+    
+}
+.blob-8{
+    transition: all 0.10s 0.8s ease-out;
+    background-color:#b17acd;
+    
+}
+
+.container-menu.active .blob-1 {
+    left: 150%
+}
+.container-menu.active .blob-2 {
+    left: 127.5%; 
+    top: 127.5%; 
+}
+.container-menu.active .blob-3 {
+    top: 150%
+}
+.container-menu.active .blob-4 {
+    left: -27.5%;
+    top: 127.5%
+}
+.container-menu.active .blob-5 {
+    left: -50%;
+}
+.container-menu.active .blob-6 {
+    left: -27.5%;
+    top: -27.5%;
+}
+.container-menu.active .blob-7 {
+    top: -50%
+}
+.container-menu.active .blob-8 {
+    top: -27.5%;
+    left: 127.5%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container-menu.active .blob-1 {
+        left: 100%
+    }
+    .container-menu.active .blob-2 {
+        left: 85%; 
+        top: 85%
+    }
+    .container-menu.active .blob-3 {
+        top:100%
+    }
+    .container-menu.active .blob-4 {
+        left:15%;
+        top:85%
+    }
+    .container-menu.active .blob-5 {
+        left: 0%;
+    }
+    .container-menu.active .blob-6 {
+        left: 15%;
+        top: 15%;
+    }
+    .container-menu.active .blob-7 {
+        top: 0%
+    }
+    .container-menu.active .blob-8 {
+        top: 15%;
+        left:85%;
+    }
+}

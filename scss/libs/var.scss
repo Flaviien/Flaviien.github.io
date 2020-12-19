@@ -1,0 +1,10 @@
+:root{
+    --blob-size: 120px;
+}
+$blob-size : var(--blob-size);
+
+@media screen and (max-width: 768px) {
+    :root{
+        --blob-size: 60px;
+    }
+}
