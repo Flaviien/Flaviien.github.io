@@ -4,15 +4,29 @@
 
 body{
     background-color: #212121;
+    height: 100vh;
 }
 
-.container-menu {
-    position: absolute;
+.container-menu{
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.3s ease-out;
+}
+
+.menu {
+    position: relative;
     top: 50%;
-    left: 50%;
+    left: 50%; 
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
+}
+
+@media screen and (min-width: 768px) and (min-height: 576px) {
+    .menu {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @import './components/btn-menu.scss';
@@ -27,3 +41,5 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@import './components/info.scss';

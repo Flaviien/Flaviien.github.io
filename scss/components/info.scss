@@ -1,0 +1,48 @@
+.container-info{
+    display: none;
+    height: 50vh;
+}
+.info {
+    display: none;
+    height: 100%;
+    margin: 0 5px;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+    background-size: cover;
+	box-sizing: border-box;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    /* transition: visibility 0s, opacity 0.5s linear; */
+}
+
+.info-1 {
+    border: calc(5px + 0.2vw) solid #a2e6d7;
+}
+
+.info-2 {
+    border: calc(5px + 0.2vw) solid #b3cca4;
+}
+
+.info-3 {
+    border: calc(5px + 0.2vw) solid #cb8fc3;
+}
+
+.info-4 {
+    border: calc(5px + 0.2vw) solid #b3b3b3;
+}
+
+.info-5 {
+    border: calc(5px + 0.2vw) solid #8bb5e7;
+}
+
+.info-6 {
+    border: calc(5px + 0.2vw) solid #e6db8b;
+}
+
+.info-7 {
+    border: calc(5px + 0.2vw) solid #e68a8f;
+}
+
+.info-8 {
+    border: calc(5px + 0.2vw) solid #b17acd;
+}

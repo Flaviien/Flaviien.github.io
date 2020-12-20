@@ -48,20 +48,27 @@ td:not([align]), th:not([align]) {
 }
 
 :root {
-  --blob-size: 120px;
+  --blob-size: 60px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 576px) {
   :root {
-    --blob-size: 60px;
+    --blob-size: 120px;
   }
 }
 body {
   background-color: #212121;
+  height: 100vh;
 }
 
 .container-menu {
-  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.3s ease-out;
+}
+
+.menu {
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -69,6 +76,12 @@ body {
   height: 200px;
 }
 
+@media screen and (min-width: 768px) and (min-height: 576px) {
+  .menu {
+    width: 400px;
+    height: 400px;
+  }
+}
 .btn-menu {
   position: absolute;
   top: 50%;
@@ -82,7 +95,7 @@ body {
   z-index: 20;
 }
 
-.container-menu.active .btn-menu {
+.menu.active .btn-menu {
   cursor: default;
 }
 
@@ -147,79 +160,42 @@ body {
   background-color: #b17acd;
 }
 
-.container-menu.active .blob-1 {
-  left: 150%;
+.menu.active .blob-1 {
+  left: 100%;
 }
 
-.container-menu.active .blob-2 {
-  left: 127.5%;
-  top: 127.5%;
+.menu.active .blob-2 {
+  left: 85%;
+  top: 85%;
 }
 
-.container-menu.active .blob-3 {
-  top: 150%;
+.menu.active .blob-3 {
+  top: 100%;
 }
 
-.container-menu.active .blob-4 {
-  left: -27.5%;
-  top: 127.5%;
+.menu.active .blob-4 {
+  left: 15%;
+  top: 85%;
 }
 
-.container-menu.active .blob-5 {
-  left: -50%;
+.menu.active .blob-5 {
+  left: 0%;
 }
 
-.container-menu.active .blob-6 {
-  left: -27.5%;
-  top: -27.5%;
+.menu.active .blob-6 {
+  left: 15%;
+  top: 15%;
 }
 
-.container-menu.active .blob-7 {
-  top: -50%;
+.menu.active .blob-7 {
+  top: 0%;
 }
 
-.container-menu.active .blob-8 {
-  top: -27.5%;
-  left: 127.5%;
+.menu.active .blob-8 {
+  top: 15%;
+  left: 85%;
 }
 
-@media screen and (max-width: 768px) {
-  .container-menu.active .blob-1 {
-    left: 100%;
-  }
-
-  .container-menu.active .blob-2 {
-    left: 85%;
-    top: 85%;
-  }
-
-  .container-menu.active .blob-3 {
-    top: 100%;
-  }
-
-  .container-menu.active .blob-4 {
-    left: 15%;
-    top: 85%;
-  }
-
-  .container-menu.active .blob-5 {
-    left: 0%;
-  }
-
-  .container-menu.active .blob-6 {
-    left: 15%;
-    top: 15%;
-  }
-
-  .container-menu.active .blob-7 {
-    top: 0%;
-  }
-
-  .container-menu.active .blob-8 {
-    top: 15%;
-    left: 85%;
-  }
-}
 .icon {
   width: 70%;
   height: 70%;
@@ -227,6 +203,56 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.container-info {
+  display: none;
+  height: 50vh;
+}
+
+.info {
+  display: none;
+  height: 100%;
+  margin: 0 5px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  /* transition: visibility 0s, opacity 0.5s linear; */
+}
+
+.info-1 {
+  border: calc(5px + 0.2vw) solid #a2e6d7;
+}
+
+.info-2 {
+  border: calc(5px + 0.2vw) solid #b3cca4;
+}
+
+.info-3 {
+  border: calc(5px + 0.2vw) solid #cb8fc3;
+}
+
+.info-4 {
+  border: calc(5px + 0.2vw) solid #b3b3b3;
+}
+
+.info-5 {
+  border: calc(5px + 0.2vw) solid #8bb5e7;
+}
+
+.info-6 {
+  border: calc(5px + 0.2vw) solid #e6db8b;
+}
+
+.info-7 {
+  border: calc(5px + 0.2vw) solid #e68a8f;
+}
+
+.info-8 {
+  border: calc(5px + 0.2vw) solid #b17acd;
 }
 
 /*# sourceMappingURL=style.css.map */
