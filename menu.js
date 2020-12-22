@@ -1,4 +1,9 @@
 const containerMenuElt = document.querySelector('.container-menu');
+const blobTitleElt = document.querySelector('.blob-title');
+const blobHoverTitleElt = document.querySelector('.blob-hover-title');
+
+const blobTitle = ["Titre 1", "Titre 2", "Titre 3", "Titre 4", "Titre 5", "Titre 6", "Titre 7", "Titre 8"];
+
 const menuElt = document.querySelector('.menu');
 const blobsElts = document.querySelectorAll('.blob');
 const btnMenuElt = document.querySelector('.btn-menu');
@@ -9,20 +14,38 @@ const containerInfoElt = document.querySelector('.container-info');
 const infosElts = document.querySelectorAll('.info');
 
 
-
 btnMenuElt.addEventListener('click', () => {
     menuElt.classList.add('active');
-    iconBarsElt.style.opacity = "0";
-    iconSmileyElt.style.opacity = "1";
+    btnMenuElt.style.opacity = 0;
+    setTimeout(() => {
+        btnMenuElt.style.display = "none";
+    }, 200)
 
 })
 
 let menuUp = false;
+
 blobsElts.forEach(elt => {
+     elt.addEventListener('mouseenter', (e) => {
+        for (let i = 1; i <= 8; i++) {
+           if (e.currentTarget.classList[1] === `blob-${i}`){
+                blobHoverTitleElt.innerHTML = blobTitle[i - 1];
+            }
+        }
+    })
+
+    elt.addEventListener('mouseleave', (e) => {
+        for (let i = 1; i <= 8; i++) {
+            if (e.currentTarget.classList[1] === `blob-${i}`){
+                blobHoverTitleElt.innerHTML = "";
+            }
+        }   
+    }) 
+
     elt.addEventListener('click', (e) => {
-        if(!menuUp) {
-            console.log(e.currentTarget);
-            containerMenuElt.style.height = "50vh";
+        if (!menuUp) {
+            // containerMenuElt.style.height = "50vh";
+            containerMenuElt.classList.add("container-menu-position");
             containerInfoElt.style.display = "block";
             menuUp = true;
         }
@@ -30,27 +53,19 @@ blobsElts.forEach(elt => {
         infosElts.forEach(element => {
             element.style.display = "none";
         });
-        
-        /* switch (e.currentTarget.classList[1]) {
-            case "blob-1":
-                
-                infosElts[0].style.display = "block";
-                break;
-            case "blob-2":
-                infosElts[1].style.display = "block";
-                break;
-            case "blob-3":
-                break;
-        } */
 
         for (let i = 1; i <= 8; i++) {
-            if(e.currentTarget.classList[1] === `blob-${i}`) {
+            if (e.currentTarget.classList[1] === `blob-${i}`) {
                 infosElts[i - 1].style.display = "block";
+                blobTitleElt.innerHTML = blobTitle[i - 1]
+
+                if (e.currentTarget.classList[1] === 'blob-1') {
+                    blobsElts[0].children[0].setAttribute('src', "resources/envelope-open-regular.svg");
+                } else {
+                    blobsElts[0].children[0].setAttribute('src', "resources/envelope-regular.svg");
+                }
             }
         }
-
     })
 });
-
-
 

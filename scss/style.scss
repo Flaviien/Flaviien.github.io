@@ -3,33 +3,23 @@
 @import './libs/var.scss';
 
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: #212121;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-menu{
-    width: 100vw;
-    height: 100vh;
-    transition: all 0.3s ease-out;
-}
+@media screen and (min-width: 768px) and (min-height: 576px){
+    body {
+        flex-direction: row
 
-.menu {
-    position: relative;
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-}
-
-@media screen and (min-width: 768px) and (min-height: 576px) {
-    .menu {
-        width: 400px;
-        height: 400px;
     }
+
 }
 
-@import './components/btn-menu.scss';
+@import './components/titles.scss';
+@import './components/menu.scss';
 @import './components/blobs.scss';
 
 

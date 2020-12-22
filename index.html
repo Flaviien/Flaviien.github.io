@@ -3,49 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="menu.js" defer></script>
     <title>Menu circulaire</title>
 </head>
 <body>
     <div class="container-menu">
+        <h2 class="blob-title"></h2>
         <div class="menu">
             <div class="btn-menu">
                 <img src="resources/bars-solid.svg" alt="" class="icon" id="icon-bars">
-                <img src="resources/smile-wink-regular.svg" alt="" class="icon" id="icon-smiley">
+            </div>
+            <div class="container-blob-hover-title">
+                <h2 class="blob-hover-title">Titre</h2>
             </div>
             <div class="blob blob-1">
-                <img src="resources/battle-net-brands.svg" alt="" class="icon">
+                <img src="resources/envelope-regular.svg" alt="" class="icon">
             </div>
             <div class="blob blob-2">
-                <img src="resources/atom-solid.svg" alt="" class="icon">
+                <img src="resources/user-solid.svg" alt="" class="icon">
             </div>
             <div class="blob blob-3">
-                <img src="resources/airbnb-brands.svg" alt="" class="icon">
+                <img src="resources/film-solid.svg" alt="" class="icon">
             </div>
             <div class="blob blob-4">
-                <img src="resources/accessible-icon-brands.svg" alt="" class="icon">
+                <img src="resources/home-solid.svg" alt="" class="icon">
             </div>
             <div class="blob blob-5">
-                <img src="resources/battle-net-brands.svg" alt="" class="icon">
+                <img src="resources/map-marker-alt-solid.svg" alt="" class="icon">
             </div>
             <div class="blob blob-6">
-                <img src="resources/atom-solid.svg" alt="" class="icon">
+                <img src="resources/wordpress-brands.svg" alt="" class="icon">
             </div>
             <div class="blob blob-7">
-                <img src="resources/airbnb-brands.svg" alt="" class="icon">
+                <img src="resources/atom-solid.svg" alt="" class="icon">
             </div>
             <div class="blob blob-8">
-                <img src="resources/accessible-icon-brands.svg" alt="" class="icon">
+                <img src="resources/atom-solid.svg" alt="" class="icon">
             </div>
         </div>
     </div>
     <div class="container-info">
-        <div class="info info-1">
-            info 1
+        <div data-simplebar class="info info-1">
+            <form class="contact-form">
+                <input class="text-field lite-field" type="text" placeholder="Nom">
+                <input class="text-field lite-field" type="text" placeholder="Prénom">
+                <input class="text-field field" type="email" placeholder="Email">
+                <textarea class="text-field message-field" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="form-btn">Envoyer</button>
+            </form>
         </div>
         <div class="info info-2">
-            info 2
+            <p>Flavien Laureau</p>
+            <p class="github"><a href="https://github.com/Flaviien">Mon GitHub</a></p>
+            <p>Tel : 06 24 76 93 78</p>
+            <p>Mail : flavien.laureau@gmail.com</p>
+            
         </div>
         <div class="info info-3">
             info 3

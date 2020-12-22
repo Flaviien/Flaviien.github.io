@@ -1,0 +1,27 @@
+.blob-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.container-blob-hover-title {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .blob-hover-title {
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 576px) {
+    .container-blob-hover-title {
+        display: block;
+    }
+}
