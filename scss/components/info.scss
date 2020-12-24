@@ -71,12 +71,42 @@
 }
 
 .info-2 {
-    border: calc(5px + 0.2vw) solid #b3cca4;
-    .github{
-        margin: 20px 0;
+    border: 2px solid #b3cca4;
+
+    .presentation{
+        font-family: 'Courgette', cursive;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        text-align: center;
+        &:nth-child(2) {
+            margin-bottom: 25px;
+        }
+    }
+
+    strong {
+        color: #b3cca4;
     }
     
-    .github a {
+    hr {
+        margin: 10px 0;
+    }
+
+    h3 {
+        margin: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    p {
+        line-height: 1.4rem;
+    }
+    .links{
+        margin: 20px 0 35px 0;
+        text-align: center;
+    }
+    
+    .links a {
         color: white;
         font-size: 14px;
         font-weight: 500;
@@ -93,6 +123,13 @@
 
         &:hover {
         color: #8bb5e7;
+        }
+
+        &:nth-child(1) {
+            margin-right: 20px;
+        }
+        &:nth-child(2) {
+            margin-left: 20px;
         }
     }
 }

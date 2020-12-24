@@ -315,12 +315,37 @@ body {
 }
 
 .info-2 {
-  border: calc(5px + 0.2vw) solid #b3cca4;
+  border: 2px solid #b3cca4;
 }
-.info-2 .github {
-  margin: 20px 0;
+.info-2 .presentation {
+  font-family: "Courgette", cursive;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-align: center;
 }
-.info-2 .github a {
+.info-2 .presentation:nth-child(2) {
+  margin-bottom: 25px;
+}
+.info-2 strong {
+  color: #b3cca4;
+}
+.info-2 hr {
+  margin: 10px 0;
+}
+.info-2 h3 {
+  margin: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.info-2 p {
+  line-height: 1.4rem;
+}
+.info-2 .links {
+  margin: 20px 0 35px 0;
+  text-align: center;
+}
+.info-2 .links a {
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -335,8 +360,14 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
-.info-2 .github a:hover {
+.info-2 .links a:hover {
   color: #8bb5e7;
+}
+.info-2 .links a:nth-child(1) {
+  margin-right: 20px;
+}
+.info-2 .links a:nth-child(2) {
+  margin-left: 20px;
 }
 
 .info-3 {

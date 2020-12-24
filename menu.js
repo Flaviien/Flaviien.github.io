@@ -2,7 +2,8 @@ const containerMenuElt = document.querySelector('.container-menu');
 const blobTitleElt = document.querySelector('.blob-title');
 const blobHoverTitleElt = document.querySelector('.blob-hover-title');
 
-const blobTitle = ["Titre 1", "Titre 2", "Titre 3", "Titre 4", "Titre 5", "Titre 6", "Titre 7", "Titre 8"];
+const blobTitle = ["Contactez-moi", "Mon profil", "Festival de film", "Agence immobilière", "Agence immobilière;Version2", "Let's Eat Reviews", "Agence Chalet et Caviar", "Titre 8"];
+
 
 const menuElt = document.querySelector('.menu');
 const blobsElts = document.querySelectorAll('.blob');
@@ -46,7 +47,9 @@ blobsElts.forEach(elt => {
         if (!menuUp) {
             // containerMenuElt.style.height = "50vh";
             containerMenuElt.classList.add("container-menu-position");
-            containerInfoElt.style.display = "block";
+            setTimeout(() => {
+                containerInfoElt.style.display = "block";
+            }, 200)
             menuUp = true;
         }
 
@@ -68,4 +71,3 @@ blobsElts.forEach(elt => {
         }
     })
 });
-
