@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 
+    <link href="./simple-lightbox/simple-lightbox.min.css" rel="stylesheet">
+    <script src="./simple-lightbox/simple-lightbox.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    
     <script src="menu.js" defer></script>
-    <title>Menu circulaire</title>
+    <title>Flavien Laureau</title>
 </head>
 <body>
     <div class="container-menu">
-        <h2 class="blob-title"></h2>
-        <div class="menu">
+        <div class="menu active">
             <div class="btn-menu">
                 <img src="resources/bars-solid.svg" alt="" class="icon" id="icon-bars">
             </div>
@@ -34,24 +37,25 @@
                 <img src="resources/film-solid.svg" alt="" class="icon">
             </div>
             <div class="blob blob-4">
-                <img src="resources/home-solid.svg" alt="" class="icon">
+                <img src="resources/building-solid.svg" alt="" class="icon">
             </div>
             <div class="blob blob-5">
-                <img src="resources/map-marker-alt-solid.svg" alt="" class="icon">
+                <img src="resources/building-regular.svg" alt="" class="icon">
             </div>
             <div class="blob blob-6">
-                <img src="resources/wordpress-brands.svg" alt="" class="icon">
+                <img src="resources/map-marker-alt-solid.svg" alt="" class="icon">
             </div>
             <div class="blob blob-7">
-                <img src="resources/atom-solid.svg" alt="" class="icon">
+                <img src="resources/wordpress-brands.svg" alt="" class="icon">
             </div>
             <div class="blob blob-8">
-                <img src="resources/atom-solid.svg" alt="" class="icon">
+                <img src="resources/industry-solid.svg" alt="" class="icon">
             </div>
         </div>
     </div>
     <div class="container-info">
         <div data-simplebar class="info info-1">
+            <h2>Contactez-moi</h2>
             <form class="contact-form">
                 <input class="text-field lite-field" type="text" placeholder="Nom">
                 <input class="text-field lite-field" type="text" placeholder="Prénom">
@@ -99,23 +103,44 @@
             
         </div>
         <div data-simplebar class="info info-3">
-            info 3
+            <h2>Festival de films</h2>
+            <div class="gallery gallery-3">
+                <a href="resources/category 3/img1.jpg"><img src="resources/category 3/img1.jpg" alt="" title="Accueil du site et responsive"/></a>
+            </div>
+
+            <p>Dans le cadre d'un projet de ma formation, j'ai dû réaliser un site vitrine pour un vrai-faux client, qui avais un cahier des charges précis.</p>
+            <br>
+            <p>Petit budget, réservation directement sur le site, respect du RGPD, mobile friendly, et toutes les bonnes pratiques en vigueur pour avoir un site web respectueux de son utilisateur.</p>
+            <br>
+            <p>Un document présentant les spécifications techniques était également demandé.</p>
+            <p>Il est disponible au téléchargement en cliquant <a class="links" href="./resources/category 3/Document de spécification technique du projet.pdf" download="Document de spécification technique">ici</a>.</p>
+
+            <div class="gallery gallery-3 grid-3">
+                <a href="resources/category 3/img2.jpg"><img src="resources/category 3/img2.jpg" alt="" title="Galerie de films"/></a>
+                <a href="resources/category 3/img3.jpg"><img src="resources/category 3/img3.jpg" alt="" title="Actualités et pied de page"/></a>
+                <a href="resources/category 3/img4.jpg"><img src="resources/category 3/img4.jpg" alt="" title="Réservation depuis le site web, via Weezevent"/></a>
+                <a href="resources/category 3/img5.jpg"><img src="resources/category 3/img5.jpg" alt="" title="Formulaire de contact"/></a>
+            </div>
         </div>
         <div data-simplebar class="info info-4">
-            info 4
+            <h2>Agence immobilière</h2>
         </div>
         <div data-simplebar class="info info-5">
-            info 5
+            <h2>Agence immobilière - Version2</h2>
         </div>
         <div data-simplebar class="info info-6">
-            info 6
+            <h2>Let's Eat Reviews</h2>
         </div>
         <div data-simplebar class="info info-7">
-            info 7
+            <h2>Agence Chalet et Caviar</h2>
         </div>
         <div data-simplebar class="info info-8">
-            info 8
+            <h2>Projet en cours</h2>
         </div>
     </div>
+
+    <script>
+        let gallery3 = new SimpleLightbox('.gallery-3 a');
+    </script>
 </body>
 </html>

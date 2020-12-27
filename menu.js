@@ -2,7 +2,7 @@ const containerMenuElt = document.querySelector('.container-menu');
 const blobTitleElt = document.querySelector('.blob-title');
 const blobHoverTitleElt = document.querySelector('.blob-hover-title');
 
-const blobTitle = ["Contactez-moi", "Mon profil", "Festival de film", "Agence immobilière", "Agence immobilière;Version2", "Let's Eat Reviews", "Agence Chalet et Caviar", "Titre 8"];
+const blobTitle = ["Contactez-moi", "Mon profil", "Festival de films", "Agence immobilière", "Agence immobilière - Version 2", "Let's Eat Reviews", "Agence Chalet et Caviar", "Projet en cours"];
 
 
 const menuElt = document.querySelector('.menu');
@@ -71,3 +71,12 @@ blobsElts.forEach(elt => {
         }
     })
 });
+
+function devFunction() {
+    btnMenuElt.style.display = "none";
+    containerMenuElt.classList.add("container-menu-position");
+    containerInfoElt.style.display = "block";
+    infosElts[2].style.display = "block";
+}
+
+devFunction()

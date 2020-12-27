@@ -3,8 +3,22 @@
 }
 $blob-size : var(--blob-size);
 
-@media screen and (min-width: 768px) and (min-height: 576px) {
+@media screen and (min-width: 992px) and (min-height: 576px) {
     :root{
         --blob-size: 120px;
     }
 } 
+
+
+/* Colors */
+$cyan : #a2e6d7;
+$green : #b3cca4;
+$pink : #cb8fc3;
+$grey : #b3b3b3;
+$blue : #8bb5e7;
+$yellow: #e6db8b;
+$red : #e68a8f;
+$purple : #b17acd;
+
+$blueLink : #8bb5e7;
+
