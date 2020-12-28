@@ -265,6 +265,19 @@ body {
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
+.info .info-link {
+  color: white;
+}
+.info .info-link:hover {
+  color: #8bb5e7;
+}
+.info .gallery {
+  text-align: center;
+}
+.info .gallery img {
+  margin: 10px 0;
+  width: 100%;
+}
 
 @media screen and (min-width: 992px) and (min-height: 576px) {
   .simplebar-wrapper {
@@ -281,6 +294,10 @@ body {
   }
   .info .simplebar-scrollbar::before {
     background-color: white;
+  }
+  .info .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .info-1 {
@@ -370,6 +387,10 @@ body {
   margin-right: 20px;
 }
 .info-2 .links a:nth-child(2) {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.info-2 .links a:nth-child(3) {
   margin-left: 20px;
 }
 
@@ -380,28 +401,10 @@ body {
 .info-3 h2 {
   color: #cb8fc3;
 }
-.info-3 .links {
-  color: white;
-}
-.info-3 .links:hover {
-  color: #8bb5e7;
-}
-.info-3 .gallery {
-  text-align: center;
-}
-.info-3 .gallery img {
-  margin: 10px 0;
-  width: 100%;
-}
-@media screen and (min-width: 992px) and (min-height: 576px) {
-  .info-3 .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 .info-4 {
   border: calc(5px + 0.2vw) solid #b3b3b3;
+  font-size: 1.1rem;
 }
 .info-4 h2 {
   color: #b3b3b3;
@@ -409,6 +412,7 @@ body {
 
 .info-5 {
   border: calc(5px + 0.2vw) solid #8bb5e7;
+  font-size: 1.1rem;
 }
 .info-5 h2 {
   color: #8bb5e7;

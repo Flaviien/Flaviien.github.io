@@ -71,12 +71,12 @@ blobsElts.forEach(elt => {
         }
     })
 });
-
+/* 
 function devFunction() {
     btnMenuElt.style.display = "none";
     containerMenuElt.classList.add("container-menu-position");
     containerInfoElt.style.display = "block";
-    infosElts[2].style.display = "block";
+    infosElts[3].style.display = "block";
 }
 
-devFunction()
+devFunction() */
